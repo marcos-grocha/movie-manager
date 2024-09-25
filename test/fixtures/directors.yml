@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  birthdate: 2024-09-25
+  favorite_genre: one
+
+two:
+  name: MyString
+  birthdate: 2024-09-25
+  favorite_genre: two
