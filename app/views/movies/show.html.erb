@@ -1,0 +1,13 @@
+<header><h1><%= @movie.title %></h1></header>
+<section class="hight">
+    <%= link_to 'Editar', edit_movie_path %> 
+    <p><strong>Ano de Lançamento:</strong> <%= @movie.release_year %></p>
+    <p><strong>Sinopse:</strong> <%= @movie.synopsis %></p>
+    <p><strong>País de Origem:</strong> <%= @movie.country %></p>
+    <p><strong>Duração:</strong> <%= @movie.duration %> minutos</p>
+    <p><strong>Diretor:</strong> <%= link_to @movie.director.name, director_path(@movie.director) %></p>
+    <p><strong>Gênero:</strong> <%= link_to @movie.genre.nome, genre_path(@movie.genre) %></p>
+</section>
+<footer>
+    <p>&copy;<a href="https://www.linkedin.com/in/marcos-grocha/" target="_blank"> marcos-grocha</a></p>
+</footer>

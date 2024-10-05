@@ -1,0 +1,12 @@
+<%= form_with model: @director do |f| %>
+    <%= f.label 'Nome' %>
+    <%= f.text_field :name %> <br><br>
+
+    <%= f.label 'Data de Nascimento' %>
+    <%= f.date_field :birthdate %> <br><br>
+
+    <%= f.label 'Genero Favorito' %>
+    <%= f.collection_select :favorite_genre_id, Genre.all, :id, :nome %> <br>
+
+    <%= f.submit 'Salvar' %>
+<% end %>

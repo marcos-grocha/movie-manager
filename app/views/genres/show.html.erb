@@ -1,0 +1,13 @@
+<header><h1><%= @genre.nome %></h1></header>
+<section>
+    <%= link_to 'Editar', edit_genre_path %> 
+    <h3>Filmes deste gênero:</h3>
+    <ul>
+      <% @movies.each do |movie| %>
+        <li><%= link_to movie.title, movie_path(movie) %> (<%= movie.release_year %>)</li>
+      <% end %>
+    </ul>
+</section>
+<footer>
+    <p>&copy;<a href="https://www.linkedin.com/in/marcos-grocha/" target="_blank"> marcos-grocha</a></p>
+</footer>
