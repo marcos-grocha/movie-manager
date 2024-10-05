@@ -1,12 +1,10 @@
 <header><h1><%= @director.name %></h1></header>
 <section>
-    <%= link_to 'Editar', edit_director_path %> 
+    <%= button_to 'Editar', edit_director_path, method: :get, class: "small" %> 
     <h3>Filmes dirigidos:</h3>
-    <ul>
-      <% @movies.each do |movie| %>
-        <li><%= link_to movie.title, movie_path(movie) %> (<%= movie.release_year %>)</li>
-      <% end %>
-    </ul>
+    <% @movies.each do |movie| %>
+        <%= button_to movie.title, movie_path(movie), method: :get, class: "medium" %> (<%= movie.release_year %>)
+    <% end %>
 </section>
 <footer>
     <p>&copy;<a href="https://www.linkedin.com/in/marcos-grocha/" target="_blank"> marcos-grocha</a></p>

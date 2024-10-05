@@ -7,9 +7,10 @@
     margin: auto;
 }
 body {
+    color: rgb(145, 66, 53);
     font: normal 15pt Arial;
     height: 100vh;
-    background-color: #2d6462;
+    background-color: rgb(224, 142, 122);
     background-image: url('movie-manager.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -27,6 +28,25 @@ section.hight {
     border-radius: 10px;
     padding: 15px;
     width: 746px;
+}
+button {
+    width: 250px;
+    height: 25px;
+    background-color: rgb(224, 142, 122);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 1px;
+}
+button.medium {
+    width: 150px;
+}
+button.small {
+    width: 75px;
+}
+button:hover {
+    background-color: rgba(145, 66, 53);
 }
 footer {
     color: white;

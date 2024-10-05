@@ -2,19 +2,19 @@
 <section>
     <h3>Filmes Disponíveis</h3>
     <% @movies.each do |movie| %>
-        <%= link_to movie.title, movie %> <br>
+        <%= button_to movie.title, movie, method: :get %> <br>
     <% end %>
 </section><br>
 <section>
     <h3>Diretores</h3>
     <% @directors.each do |director| %>
-        <%= link_to director.name, director %> <br>
+        <%= button_to director.name, director, method: :get %> <br>
     <% end %>
 </section><br>
 <section>
     <h3>Gêneros</h3>
     <% @genres.each do |genre| %>
-        <%= link_to genre.nome, genre %> <br>
+        <%= button_to genre.nome, genre, method: :get %> <br>
     <% end %>
 </section>
 <footer>
