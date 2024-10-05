@@ -1,0 +1,6 @@
+<%= form_with model: @genre do |f| %>
+    <%= f.label 'Nome do Gênero' %>
+    <%= f.text_field :nome %> <br><br>
+
+    <%= f.submit 'Salvar' %>
+<% end %>
