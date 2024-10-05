@@ -1,24 +1,29 @@
-<%= form_with model: movie do |f| %>
-    <%= f.label 'Nome' %>
-    <%= f.text_field :title %> <br><br>
+<section>
+    <%= form_with model: movie do |f| %>
+        <%= f.label 'Nome' %>
+        <%= f.text_field :title %> <br><br>
 
-    <%= f.label 'Ano de Lançamento' %>
-    <%= f.number_field :release_year %> <br><br>
+        <%= f.label 'Ano de Lançamento' %>
+        <%= f.number_field :release_year %> <br><br>
 
-    <%= f.label 'Sinopse' %>
-    <%= f.text_area :synopsis %> <br><br>
+        <%= f.label 'Sinopse' %>
+        <%= f.text_area :synopsis %> <br><br>
 
-    <%= f.label 'País de Origem' %>
-    <%= f.text_field :country %> <br><br>
+        <%= f.label 'País de Origem' %>
+        <%= f.text_field :country %> <br><br>
 
-    <%= f.label 'Duração' %>
-    <%= f.number_field :duration %> <br><br>
+        <%= f.label 'Duração' %>
+        <%= f.number_field :duration %> <br><br>
 
-    <%= f.label 'Diretor' %>
-    <%= f.collection_select :director_id, Director.all, :id, :name %> <br><br>
+        <%= f.label 'Diretor' %>
+        <%= f.collection_select :director_id, Director.all, :id, :name %> <br><br>
 
-    <%= f.label 'Genero' %>
-    <%= f.collection_select :genre_id, Genre.all, :id, :nome %> <br>
+        <%= f.label 'Genero' %>
+        <%= f.collection_select :genre_id, Genre.all, :id, :nome %> <br>
 
-    <%= f.submit 'Salvar' %>
-<% end %>
+        <%= f.submit 'Salvar' %>
+    <% end %>
+</section>
+<footer>
+    <p>&copy;<a href="https://www.linkedin.com/in/marcos-grocha/" target="_blank"> marcos-grocha</a></p>
+</footer>
