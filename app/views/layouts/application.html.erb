@@ -18,20 +18,13 @@
   </head>
 
   <body>
-    <ul>
-      <li>
-        <%= link_to "Home", root_path %>
-      </li>
-      <li>
-        <%= link_to "Cadastrar novo Filme", new_movie_path %>
-      </li>
-      <li>
-        <%= link_to "Cadastrar novo Diretor", new_director_path %>
-      </li>
-      <li>
-        <%= link_to "Cadastrar novo Genero", new_genre_path %>
-      </li>
-    </ul>
+      <%= button_to "Home", root_path, method: :get %>
+
+      <%= button_to "Cadastrar novo Filme", new_movie_path, method: :get %>
+
+      <%= button_to "Cadastrar novo Diretor", new_director_path, method: :get %>
+    
+      <%= button_to "Cadastrar novo Gênero", new_genre_path, method: :get %>
 
     <%= yield %>
   </body>

@@ -1,10 +1,10 @@
 <header><h1><%= @genre.nome %></h1></header>
 <section>
-    <%= link_to 'Editar', edit_genre_path %> 
+    <%= button_to 'Editar', edit_genre_path, method: :get, class: "small" %> 
     <h3>Filmes deste gênero:</h3>
     <ul>
       <% @movies.each do |movie| %>
-        <li><%= link_to movie.title, movie_path(movie) %> (<%= movie.release_year %>)</li>
+        <%= button_to movie.title, movie_path(movie), method: :get, class: "medium" %> (<%= movie.release_year %>)
       <% end %>
     </ul>
 </section>
