@@ -1,6 +1,11 @@
-<%= form_with model: @genre do |f| %>
-    <%= f.label 'Nome do Gênero' %>
-    <%= f.text_field :nome %> <br><br>
+<section>
+    <%= form_with model: @genre do |f| %>
+        <%= f.label 'Nome do Gênero' %>
+        <%= f.text_field :nome %> <br><br>
 
-    <%= f.submit 'Salvar' %>
-<% end %>
+        <%= f.submit 'Salvar' %>
+    <% end %>
+</section>
+<footer>
+    <p>&copy;<a href="https://www.linkedin.com/in/marcos-grocha/" target="_blank"> marcos-grocha</a></p>
+</footer>
