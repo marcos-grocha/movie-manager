@@ -3,6 +3,8 @@ Agora que você concluiu sua jornada de introdução ao universo do Ruby on Rail
 Neste projeto você irá criar uma aplicação de catálogo de filmes. Para isto, será necessário criar várias rotas, models, controllers e views, então aproveite para praticar bastante!
 Faz parte deste projeto definir os models, controllers e rotas que serão utilizados para resolver cada tarefa. Você tem total liberdade para isto, mas entenda que essas definições fazem parte da sua resolução.
 
+----
+
 ## Cadastros básicos ✔️
 Sua aplicação deverá permitir cadastrar e editar gêneros de filmes (como ação, romance, ficção científica etc), diretores e os filmes em si. Cada gênero deve ter um nome. Cada diretor deve ter um nome, nacionalidade, data de nascimento e gênero favorito. Por último, os filmes devem possuir título, ano de lançamento, sinopse, país de origem, duração (em minutos), diretor(a) e gênero.
 Todos os campos são obrigatórios. Os campos de nome de gêneros e nome de categoria devem ser únicos.
